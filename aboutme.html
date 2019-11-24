@@ -8,6 +8,25 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+
+	<style>
+		#responsiveImg {
+			height: 45%; 
+			width: 45%; 
+			padding-right: 4%; 
+			padding-top: 2%; 
+			float: left;
+		}
+
+		@media only screen and (max-width: 600px) {
+			#responsiveImg {
+				width: 100%;
+				float: none;
+				padding-left: 3%;
+			}
+		}
+	</style>
+
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -22,8 +41,8 @@
 					<nav id="nav">
 						<ul class="links">
                             <li><a href="index.html">Projects</a></li>
-                            <li class="active"><a href="aboutme.html">About</a></li>
-                            <li><a href="contactme.html">Contact Me</a></li>
+                            <li class="active"><a href="aboutme.html">About Me</a></li>
+                            <li><a href="contactme.html">Contact</a></li>
 						</ul>
 						<ul class="icons">
 							<!--<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
@@ -43,7 +62,11 @@
 									<h1>Nice to Meet You</h1>
 									<p>Life is full of Challenges.<br>Always stay positive :)</p>
 								</header>
-								<p><div class="image main"><img src="images/portrait.jpg" alt="" style="height: 500px; width: 500px; padding-right: 30px; padding-top: 20px;float: left;"/></div></p>
+								<p>
+									<div class="image main">
+										<img src="images/portrait.jpg" alt="" id="responsiveImg">
+									</div>
+								</p>
 								<p style="margin-top: 20px;">I'm just an ordinary girl that love coding. I live in Penang. Penang is a wonderful place that full of delicious foods. I'm studying in Science Stream at Phor Tay High School. I took Computer Science too.</p>
 								<p>I enjoy spending my free time editing videos and playing video games. I like to listen to music while coding.</p>
 								<p>I know basics of few programming languages such as PHP, Java, JavaScript, MySQL and CSS. I'm not expert in any one of them but I'm willing to learn everything that I don't know.
