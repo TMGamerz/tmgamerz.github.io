@@ -8,8 +8,20 @@
 	<link rel="icon" href="images/iconnew.png">
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="assets/css/user.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+	<style>
+		#responsiveVid {
+			height: 100%; 
+			width: 100%; 
+		}
+
+		@media only screen and (max-width: 600px) {
+			#responsiveVid {
+				width: 100%;
+			}
+		}
+	</style>
 </head>
 
 <body class="is-preload">
@@ -167,7 +179,7 @@
 					</div>
 				</div>
 
-				<video width=600 height=445 controls>
+				<video width=600 height=445 controls id="responsiveVid">
 					<source src="images/showcase.mp4" type="video/mp4">
 				</video>
 
